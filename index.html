@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="author" content="Eugenio Segala">
+    <meta name="description" content="An extremely easy and clear SlideShow Background dev in Vanilla JS.">
+    <meta name="keywords" content="javascript,background-image,slides,slider,slideshow,gallery,js">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEM-VINDO</title>
+    <link rel="stylesheet" type="text/css" href="_css/novo.css">
+    <link rel="stylesheet" href="_css/carregando.css">
+    <link rel="stylesheet" href="_css/ANIMAÇÃO.css">
+<script type="text/javascript" src="js/pace.min.js"></script>
+<link rel="shortcut icon" href="_img/downloa.png" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<style>
+   body {
+
+   
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -50px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+
+  .ct {
+    height: 95.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  } 
+</style>
+</head>
+<body>
+  
+
+ <img style="position: absolute; top: 0; right: 0; border: 0;"></a>
+
+  <div class="container ct">
+
+    <div class="row">
+<img src="_img/download2.png" class="icon">
+<div id="middle">
+        <h1 class="magic">BEM-VINDO</h1>
+      </div>
+        <h2 class="titulo2">O melhor site de Noticias do Ifsul</h2>
+        <a href="modelo.html" class="btn1 btn-gree" style="margin-left: 530px">Entrar</a>
+    </div>
+  </div> 
+
+   
+  <audio autoplay="autoplay" controls="controls"  style="margin-left: 4em;position: relative; " >
+    <source src="audio/y2mate.com - rambo_5_last_blood_trailer_song_old_town_road_QxiDERmBXy4 (1).mp3" type="audio/ogg">
+    <source src="audio/y2mate.com - rambo_5_last_blood_trailer_song_old_town_road_QxiDERmBXy4 (1).mp3" type="audio/mpeg">
+   
+  </audio>
+
+  
+  <script src="easy_background.js"></script>
+
+   <script>
+    easy_background("body",
+
+      {
+        slide: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg", "_img/rota_romantica_facebook.jpg","_img/paris-ao-por-do-sol.jpg"],
+
+        delay: [10000, 5000, 6000, 7000, 8000, 7000, 6000]
+      }
+
+
+    );
+  </script> 
+
+</body>
+</html>
