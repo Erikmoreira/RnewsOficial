@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+P.title{
+    font-family: 'whas';
+ font-size:1em;
+  }
+.responsivoCss{
+    position: relative;
+    width: 500px;
+    margin: 0px auto;
+    height: 500px;
+}
+article#conteudo{
+    background-color: #fffefe;
+    border-radius: 10px;
+     width: 20em;
+  }
+  .noticia{
+    width: 900px;
+}
+#texto2{
+    display: table-cell;
+    float: left;
+    width: 90%; 
+   margin-left: 30px;
+   padding-bottom: 2em;
+   
+  }
+  .videos{
+    background-color: lightslategray;
+    width: 60%;
+    margin-left: 0px;
+    border: none; 
+    border-radius: 30px;
+    box-shadow: black 5px 5px 4px;
+    padding-left: 30px;
+  }
+  .slider img{
+    position: relative;
+    width: 430px;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom:-5px; 
+}
+
+.radio-buttons {
+    position: absolute;
+    bottom: 5px;
+    left: 170px;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
