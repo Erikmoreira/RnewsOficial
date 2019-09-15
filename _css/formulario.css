@@ -1,0 +1,29 @@
+#formulario{
+    background-color:rgb(2, 21, 109);
+    border-radius: 10px;
+    margin-left: 330px;
+    width: 650px;
+    padding: 10px;
+    z-index: 0;
+    position: relative;
+    left: 0px;
+    top: 60px;
+    color: rgb(196, 192, 188);
+    box-shadow: 0px 0px 10px #03e6e6;
+   
+}
+#ED{
+    color: aliceblue;
+
+    margin-bottom: 5PX;
+    
+}
+#es{
+    position: relative;
+    left: 450px;
+    top: -40px;
+    margin: 0px;
+}
+input{
+    -webkit-box-sizing: border-box;
+}

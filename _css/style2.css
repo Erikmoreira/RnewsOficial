@@ -1,0 +1,333 @@
+.container * {
+     
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.container *:after , .container *:before {
+  
+    margin: 0;
+    padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+h2.title {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: tahoma;
+    text-align: center;
+    padding: 2em;
+    display: block;
+    margin: auto;
+    background-color: rgb(90, 63, 63);
+}
+.container {
+    top: 50px;
+    width: 960px;
+    background: #010129;
+    margin-left: 20px;
+    position: relative;
+    height: 460px;
+    
+}
+.vidcontainer {
+
+	width: 75%;
+    height: 100%;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 405px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.videolist {
+    float: right;
+    width: 25%;
+    background-color: rgb(8, 1, 39);
+    height: 100%;
+    position: relative;
+    
+}
+
+.vids {
+    margin: 5px;
+    background-color: #0572cc;
+    max-height: 450px;
+    min-height: 450px;
+    border: 1px solid #02361d;
+    overflow-y: scroll;
+    list-style: none;
+    direction: rtl;
+    
+}
+.vids::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(144, 157, 216);
+    border: 1px solid rgb(219, 219, 219);
+
+}
+.vids::-webkit-scrollbar-thumb {
+    background-color: rgb(210, 209, 212);
+    border-radius: 5px;
+}
+.vids::-webkit-scrollbar-thumb:hover{
+background-color:#fff;
+}
+.vids::-webkit-scrollbar-thumb:active{
+background-color:#ccc;
+}
+
+
+.vids a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px solid #f8f8fa;
+    padding: 8px 5px;
+    margin: 5px;
+}
+.vids a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(25, 0, 255);
+     text-decoration: none;
+}
+
+/*--- controllers ---*/
+.controllers {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.controllers button {
+    border: 1px solid #E7E7E7;
+    background-color: rgb(1, 42, 54);
+    color: rgb(255, 251, 251);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 1px 1px 3px rgb(122, 120, 120);
+    outline: none;
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+}
+
+.controllers button:focus {
+    box-shadow: 1px 0px 7px rgb(221, 220, 220);
+    border-color: #7ac9f7;
+    color: #0c013d;
+    background-color: rgb(255, 255, 255);
+}
+
+.btnPlay:after {
+    content: "\f04b";
+    font-family: 'FontAwesome';
+}
+.paused:after {
+    content: "\f04c";
+}
+
+.sound:after {
+content: "\f027";
+    font-family: 'FontAwesome';
+}
+.sound2:after {
+content: "\f028";
+}
+
+.muted:after {
+    content: "\f026";
+}
+.btnFS:after {
+     content: "\f065";
+    font-family: 'FontAwesome';
+}
+
+
+.closeme {
+    height: 32px;
+    width: 32px;
+    background-color: rgb(255, 255, 255);
+    top: -10px;
+    right: -10px;
+    border: 1px solid #646665;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px!important;
+    color: #00ff15;
+    font-size: 25px!important;
+}
+
+.playing {
+    background-color: rgb(10, 10, 82);
+    border: 2px solid #049233!important;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+ }
+.playing:after {
+    content: "\f01d";
+    font-family: 'FontAwesome';
+    color: #06e906;
+    float: left;
+}
+/* PROGRESS BAR CSS */
+
+.topControl {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 50px;
+    background-color: rgb(252, 252, 252);
+    z-index: 1;
+}
+/* Progress bar */
+.progress {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    background: rgb(182, 220, 255);
+}
+.progress span {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.timeBar{
+    z-index:10;
+    width:0;
+    background: #ff9100;
+}
+
+.bufferBar{
+    z-index:5;
+    width:0;
+    background: rgb(2, 43, 77);
+}
+/* time and duration */
+.time{
+    width:12%;
+    float:right;
+    text-align:center;
+    font-size:11px;
+    line-height:12px;
+    right: -12%;
+    opacity: 0;
+    position: absolute;
+}
+
+.topControl:hover .time {
+    right: 0;
+    opacity: 1;
+}
+
+
+.topControl:hover .progress {
+    width: 88%;
+    height: 12px;
+}
+
+/* VOLUME BAR CSS */
+/* volume bar */
+.volume {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    height: 10px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+    background-color: rgb(53, 78, 78);
+}
+.volumeBar{
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0a7fb6;
+    z-index: 10;
+}
+
+.loading {
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    height: 405px;
+    position: absolute;
+    top: 0;
+}
+i.fa.fa-spinner.fa-spin {
+    height: 60px;
+    width: 60px;
+    font-size: 60px;
+    color: rgb(250, 250, 250);
+    text-shadow: 0px 0px 8px rgb(3, 97, 77);
+    top: 172.5px;
+    left: 330px;
+    position: absolute;
+}
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: rgb(172, 168, 168)!important;
+}
+
+
+ul.speedcnt {
+    display: none;
+    position: absolute;
+    right: 30px;
+    bottom: 60px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 5px;
+    list-style: none;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+}
+
+ul.speedcnt li {
+    text-align: center;
+    font-family: 'verdana', tahoma , serif;
+    font-size: 13px;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: block;
+    border-bottom: 1px solid rgb(253, 253, 253);
+}
+
+ul.speedcnt li:last-child {
+    border-bottom: none;
+}
+
+ul.speedcnt li.selected {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+

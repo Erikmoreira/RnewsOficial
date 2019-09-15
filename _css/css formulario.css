@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(187, 187, 189);
+}
+#h1{
+z-index: 1000;
+color:white;
+margin-top:  20px;
+text-align: center;
+}
+#fomulario{
+    width: 600px;
+ background-color: rgb(3, 24, 94);
+ margin-left: 200px;
+border-radius: 10px;
+padding: 10px;
+color: aliceblue;
+position: relative;
+left: 150px;
+
+}
+.btn2{
+      
+    margin-left: 95px;
+    z-index: 1200;
+    position: relative;
+}
+.btn2:focus, .btn::-moz-focus-inner{
+    outline:none;
+    border:none;
+  }
+  .btn2{
+    font-family: arial;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight:700;
+    border-radius: 10px;
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block;
+    text-decoration: none;
+  }
+  .btn-black{
+    background:rgb(1, 255, 115);
+    color:#fff;
+    box-shadow:0 5px 0 #018b1f;
+  }
+  .btn-black:hover{
+    background:#03c53d;
+    box-shadow:0 5px 0 #017724;
+  }
+
+  .btn-black:active, .btn-purple:active, .btn1-red:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+  }

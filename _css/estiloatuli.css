@@ -1,0 +1,63 @@
+.galeria img{
+	width: 20%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid beige;
+}
+
+.galeria img:hover{
+	cursor: pointer;
+}
+
+/*estilo do bg*/
+.bg{
+	position: absolute;
+	background-color: rgb(9, 3, 90);
+	opacity: 0;
+	top: 0px;
+	left: 0px;
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+/*estilos do lightbox*/
+.lb{
+position: absolute;
+top: 5px;
+left: 25%;
+display: none;
+border:10px solid #fff;
+box-shadow: 2px 2px 12px #f6f6fa;
+background:#fff;
+width: 800px;
+height: 620px;
+z-index: 5000;
+}
+.lb img{
+	opacity: 0;
+	width: 100%;
+}
+
+
+/*botão fechar*/
+
+.close{
+	color: #fff;
+	background-color: rgb(1, 145, 44);
+	width: 20px;
+	height: 15px;
+	text-align: center;
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+    padding: 2px auto;
+    top:-10px;
+}
+
+.close:hover{
+
+	cursor: pointer;
+}
