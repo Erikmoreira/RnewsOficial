@@ -51,7 +51,7 @@ article#conteudo{
   }
   .slider img{
     position: relative;
-    width: 430px;
+    width: 600px;
     height: 500px;
     border-radius: 10px;
     margin-bottom:-5px; 
@@ -60,7 +60,7 @@ article#conteudo{
 .radio-buttons {
     position: absolute;
     bottom: 5px;
-    left: 170px;
+    left: 250px;
     right: 0;
     margin-right: auto;
     margin-left: auto;
