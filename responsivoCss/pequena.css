@@ -15,11 +15,17 @@ P.title{
 article#conteudo{
     background-color: #fffefe;
     border-radius: 10px;
-     width: 33em;
+     width: 34em;
   }
   .noticia{
     width: 900px;
 }
+#di{
+    width: 40em;
+    height:35em; 
+    border-radius: 10px;
+    margin-bottom: -4px;
+  }
 #texto2{
     display: table-cell;
     float: left;
