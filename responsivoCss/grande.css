@@ -51,3 +51,20 @@ article#conteudo{
     margin-right: auto;
     margin-left: auto;
 }
+.magic{
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #06c2f18a;
+	background-image: url(../css/water.png);
+	-webkit-background-clip:text;
+	animation: water 25s infinite;
+}
+@keyframes water {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+}
