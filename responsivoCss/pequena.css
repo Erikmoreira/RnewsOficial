@@ -4,7 +4,7 @@
 }
 P.title{
     font-family: 'whas';
- font-size:1em;
+ font-size:2em;
   }
 .responsivoCss{
     position: relative;
@@ -15,7 +15,7 @@ P.title{
 article#conteudo{
     background-color: #fffefe;
     border-radius: 10px;
-     width: 26em;
+     width: 33em;
   }
   .noticia{
     width: 900px;
