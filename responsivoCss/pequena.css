@@ -10,12 +10,12 @@ P.title{
     position: relative;
     width: 500px;
     margin: 0px auto;
-    height: 500px;
+    height: 80em;
 }
 article#conteudo{
     background-color: #fffefe;
     border-radius: 10px;
-     width: 22em;
+     width: 26em;
   }
   .noticia{
     width: 900px;
