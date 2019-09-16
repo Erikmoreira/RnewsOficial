@@ -34,6 +34,12 @@ article#conteudo{
    padding-bottom: 2em;
    
   }
+  /* parte ricardo */
+  video.video{
+    width: 600px;
+    height: 500px;
+  }
+
   .videos{
     background-color: lightslategray;
     width: 60%;
